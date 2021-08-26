@@ -1,5 +1,8 @@
+# Typical extensions for TeXworks and TEX MAKER
+
 *.aux
 *.glo
+*.nlo
 *.idx
 *.log
 *.toc
