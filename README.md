@@ -3,10 +3,12 @@
 - [Contributing](#contributing)
 - [Getting Statted](#getting-statted)
   - [Software](#software)
+  - [Build your project](#build-your-project)
+  - [Project structure](#project-structure)
+
 # LaTeX-MSCS-Thesis-Project-Format
 
 This repository provides a LaTeX a template for writing a master's thesis or project. In particular, this document correctly adheres to all of Weber State University's formatting standards for Computer Science Department as of December 2010. If you are using this template to submit a thesis to a different institution or department, please review your department's submission guidelines as this template may not be applicable.
-
 
 # Features
 
@@ -23,10 +25,33 @@ This guide was originally created by Eli Hooten, then revised by in early 2021 b
 # Getting Statted
 
 ## Software
-First, you need to download a software compiler. I suggest to use [MIkTEX](https://miktex.org/). The initial intastallation will take a few minutes.
 
-Next, you need to fork the repository if you want to source control your code (why would it you?) [repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo),
+First, you need to download a software compiler. I suggest to use [MIkTEX](https://miktex.org/). The initial intastallation will take a few minutes. The package includes `TeXworks` which is a Latex editor.
 
-How to fork a repo [link](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+Next, you need to fork the repository if you want to source control your code (why wouldn't you?):
 
-but can also download the zip file
+<https://github.com/hugo-valle/wsu-mscs-template>
+
+If you need help, see the `How to fork` a repo [link](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+
+Alternatevely, you can also [download the zip file](https://documentation.alphasoftware.com/pages/HowTo/Other/Download%20GitHub%20Project.xml) with all the required files.
+
+## Build your project
+
+Locate the folder where you downloaded your project and open `MSCSThesisProjectFormat.tex` using the `TeXWorks` editor.
+
+This is the main file that controls the project. Next, compile the project by cliking the green play button on the top left of the gui. This initial build, will take several minutes. TeXworks needs to download all packages required to build the project. Just accept all the changes.
+
+## Project structure
+
+The project is organized as follows:
+
+- `MSCSThesisProjectFormat.tex` : In this file, you only need to edit/include your name as well as those of your committee members.
+- `MSCSThesisProjectFormat.pdf` : This is the sample pdf with all the default information.
+- `MyLibrary.bub`: This file contains your bibliography.
+- Other files: The `sfchap.sty` and `sfsection.sty` are style files used by the project. The `tableTest.tex` contains a sample table. This table is included in one of your chapter files.
+- `Figures`: This folder contains any figures used in your report.
+- `Sections`: This folder contains the individual sections/chapter files of your report
+  
+Note: Remember, `MSCSThesisProjectFormat.tex` is your MAIN file. This is the file you need to recompile every time you make a change.
+This includes the bibliography file or any file in the `Sections` folder.
